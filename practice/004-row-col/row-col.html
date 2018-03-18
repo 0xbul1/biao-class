@@ -1,0 +1,28 @@
+<style>
+  .row {
+      font-size: 0;/*清除子元素间的空格*/
+  }
+  .col {
+      display: inline-block;/*由于字体大小的属性是继承下来的，所以要还原字体大小*/
+      font-size: 15px;
+      vertical-align: top;
+  }
+  /*预置一些类，用于快速为元素设置宽度*/
+  .sm {
+      width: 20%;
+      background: saddlebrown;
+  }
+  .md {
+      width: 30%;
+      background: slateblue;
+  }
+  .lg {
+      width: 50%;
+      background: tomato;
+  }
+</style>
+<div class="row">
+  <div class="col sm">yo</div>
+  <div class="col md">yo</div>
+  <div class="col lg">yo</div>
+</div>
