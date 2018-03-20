@@ -14,6 +14,8 @@ img {
 }
 
 body {
+    background: #eee;
+    color: #555;
     margin: 0;
     font-family: sans-serif, 'Microsoft YaHei'; /*字体族*/
 }
@@ -26,12 +28,17 @@ body {
 
 .row {
     font-size: 0;
+    display: block;
 }
 
 .col {
     display: inline-block;
     vertical-align: top;
     font-size: 15px;
+}
+
+.col.right {
+    text-align: right;
 }
 
 /*=========全局样式结束==========*/
