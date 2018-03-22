@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    overflow: auto;
+}
+body {
+    margin: 0;
+}
+.row {
+    font-size: 0;
+}
+.col {
+    font-size: 15px;
+    vertical-align: top;
+    display: inline-block;
+}
+.container {
+    max-width: 900px;;
+    margin: 0 auto;
+}
+a { 
+    text-decoration: none;
+    color: #fff;
+}
+.first-screen {
+    background: url(./banner.jpg);
+    background-repeat: no-repeat;
+}
+.first-screen .top-area .left {
+    width: 30%;
+}
+.first-screen .top-area .right {
+    text-align: right;
+    width: 70%;
+}
+.first-screen .top-area .right .sign {
+    color: #fff;
+    font-size: 10px;
+    margin: 5px;
+    margin-right: 5px;
+    padding-right: 5px; 
+}
+.first-screen .top-area .right span {
+    margin-right: 12px;
+}
+
+.first-screen .top-area .logo {
+    width: 120px;
+    height: 60px;
+    /* background-color: black; */
+    background-image: url(../img/sprite.png);
+    background-repeat: no-repeat;
+    background-position: -8px -370px;
+}
+.first-screen .top-area .location {
+    
+    width: 50px;
+    height: 20px;
+    background: rgba(0, 0, 0, .4);
+    border-radius: 10px;
+    text-align: center;  
+}
+.first-screen .top-area .location .name {
+    display: inline-block;
+    color: #fff;
+    font-weight: lighter;
+    font-size: 10px;
+    margin-top: 2.5px;
+    
+}
+.first-screen .top-area .logo,
+.first-screen .top-area .location {
+    display: inline-block;
+    vertical-align: middle;
+}
+.first-screen .top-area .right .link-group {
+    font-weight: bold;
+}
+.first-screen .top-area .right .link-group a {
+    padding-right: 20px;
+}
+.middle-area {
+    text-align: center;
+    color: #fff;
+}
+.middle-area .title {
+    margin-bottom: 30px;
+}
+.middle-area .title .main {
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-top: 20px;
+    margin-bottom: -20px;
+}
+.middle-area .title .sub {
+    font-weight: lighter;
+    font-size: 80%;
+}
+.middle-area .search-cat {
+    position: relative;
+    right: 30px;
+    top:15px;
+}
+.middle-area .search-area a {
+    color: #b4b5af;
+    font-size: 90%;
+    margin: 10px;
+}
+.middle-area .search-bar  {
+    padding: 20px;
+}
+.middle-area .search-btn {
+    color: #fff;
+    background: #00b86b;
+    border: none;
+    padding: 8.5px;
+    vertical-align: auto;
+}
+.bottom-area .terms {
+    position: relative;
+    left: 15px;
+}
+.bottom-area .terms a {
+    display: inline-block;
+    color: #b4b5af;
+    font-size: 20%;
+    /* position: relative;
+    left: 5px; */
+}
+.bottom-area .terms a:hover {
+    color: #fff;
+}
+
+
+
