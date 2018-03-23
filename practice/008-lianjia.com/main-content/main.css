@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    overflow: auto;
+}
+body {
+    margin: 0;
+}
+.row {
+    font-size: 0;
+}
+.col {
+    font-size: 15px;
+    vertical-align: top;
+    display: inline-block;
+    width: 25%;
+}
+.container {
+    max-width: 900px;;
+    margin: 0 auto;
+}
+.main-content .card-group .thumbnail {
+    padding-left: 25px;
+}
+.main-content .card-group .description {
+    text-align: center;
+}
+.main-content .card-group .card {
+    padding: 10px 20px;
+}
