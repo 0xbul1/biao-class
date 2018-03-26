@@ -91,6 +91,9 @@ a {
 .col-12 {
     width: 100%;
 }
+.first-screen {
+    background: #ffffff;
+}
 .nav-global {
     background: #f2f2f2;
     padding: 8px;
@@ -120,6 +123,11 @@ a {
     background-repeat: no-repeat;
     background-position: -20px -16px;
     background-size: 100%;
+    position: relative;
+    top: 17px;
+}
+.nav-homepage {
+    padding-top: 10px;
 }
 /* .seach-area .search,
 .seach-area .submit {
@@ -130,3 +138,73 @@ a {
     border: 1px solid rgba(0, 0, 0, .2);
     color: rgba(0, 0, 0, .6);
 } */
+.search-area .search,
+.search-area .submit {
+    display: inline-block;
+    padding: 13px;
+    /* font-size: 0.8rem; */
+    /* text-align: center;
+    width: 3000px; */
+}
+.search-area {
+    position: relative;
+    left: 80px;
+    top: 40px;
+}
+.search-area .search {
+    width: 500px;
+    border: 2px solid #ff0036;
+    outline: none;
+}
+.search-area .submit {
+    background: #ff0036;
+    color: #ffffff;
+    font-weight: bolder;
+    border: 2px solid #ff0036;
+    width: 140px;
+}
+.cat {
+    display: inline-block;
+    padding-top: 10px;
+    font-size: 1.1rem;
+    position: relative;
+    right: 18px;
+}
+.cat a {
+    padding-left: 18px;
+}
+.cat a:nth-child(odd) {
+    color: #999999;
+}
+.cat a:nth-child(odd)::after {
+    content: " |"
+}
+.cat a:nth-child(even) {
+    color: #ff0036;
+}
+.fenlei {
+    display: inline-block;
+    padding: 10px 10px;
+    background: #ff0036;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    padding-left: 20px;
+}
+.tmallvip {
+    display: inline-block;
+    font-size: 1.2rem;
+    padding-left: 20px;
+    margin-top: 10px;
+
+}
+.tmallvip span {
+    cursor: pointer;
+    
+}
+.tmallvip > *  {
+    margin-right: 25px;
+}
+.tmallvip a:hover {
+    color: #ff0036;
+}
