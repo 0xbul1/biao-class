@@ -208,3 +208,24 @@ a {
 .tmallvip a:hover {
     color: #ff0036;
 }
+.slider {
+    background-color: #15103a; /*背景色*/
+    background-image: url("../img/slider01.jpg"); /*背景图*/
+    background-position: center; /*背景图定位*/
+    background-size: contain; /*背景图尺寸限制方式*/
+    background-repeat: no-repeat; /*不重复*/
+}
+.slider .main-cat {
+    width: 16.5%;
+    background: rgba(0, 0, 0, .6);
+}
+.slider .main-cat a {
+    font-size: 1rem;
+    display: block;
+    padding: 8px 15px;
+    color: #fff;
+}
+.slider .main-cat a:hover {
+    color:#ff0036;
+    background:#fff;
+}
