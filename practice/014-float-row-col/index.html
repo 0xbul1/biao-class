@@ -1,10 +1,11 @@
 <style>
-  .row::before,
-  .row::after {
+  .row:before,
+  .row:after {
     content: "";
-    clear:both;
-    display:block;
+    clear: both;
+    display: block;
   }
+
   .col,
   .col-1,
   .col-2,
@@ -21,6 +22,7 @@
     display: block;
     float: left;
   }
+
   .col-1 {
     width: 8.333333333%;
   }
@@ -68,23 +70,32 @@
   .col-12 {
     width: 100%;
   }
-
-  /* .clear {
+/*
+  .clear {
     clear: both;
-  } */
+  }*/
 
   /*========global end=========*/
+
   .card {
     min-height: 30px;
     border: 1px solid #555;
   }
+
   .nav {
     background: #ccc;
   }
 </style>
+
 <div class="row">
-  <div class="col-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque maiores unde amet dolores obcaecati impedit, officia magni, libero aut debitis alias perferendis cupiditate odio commodi cum dolore tempora excepturi labore?</div>
-  <div class="col-6">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque maiores unde amet dolores obcaecati impedit, officia magni, libero aut debitis alias perferendis cupiditate odio commodi cum dolore tempora excepturi labore?</div>
+  <div class="col-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequuntur culpa cumque
+    delectus earum eum, facilis fugit, in ipsum laborum minus quasi quo ratione reprehenderit sit tempora temporibus
+    veniam voluptate!
+  </div>
+  <div class="col-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequuntur culpa cumque
+    delectus earum eum, facilis fugit, in ipsum laborum minus quasi quo ratione reprehenderit sit tempora temporibus
+    veniam voluptate!
+  </div>
 </div>
 
 <div class="row">
@@ -98,26 +109,26 @@
     <div class="card"></div>
   </div>
 </div>
+
 <div class="nav row">
   <a class="col-4" href="#">item</a>
   <a class="col-4" href="#">item</a>
-  <a class="col-4" href="#">item</a>       
+  <a class="col-4" href="#">item</a>
 </div>
+
+
 <div class="nav row">
   <div style="float: left;">
-      <a href="#">item</a>
-      <a href="#">item</a>
-      <a href="#">item</a>
-      <a href="#">item</a>
-      <a href="#">item</a>
+    <a href="#">Item</a>
+    <a href="#">Item</a>
+    <a href="#">Item</a>
+    <a href="#">Item</a>
+    <a href="#">Item</a>
   </div>
-  <div class="clear"></div>
+
   <div style="float: right;">
-      <a href="#">item</a>
-      <a href="#">item</a>
-      <a href="#">item</a>
-      <a href="#">item</a>
-      <a href="#">item</a>
+    <a href="#">Item</a>
+    <a href="#">Item</a>
+    <a href="#">Item</a>
   </div>
 </div>
-
