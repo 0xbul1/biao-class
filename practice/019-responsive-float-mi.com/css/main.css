@@ -5,3 +5,13 @@
 .nav.global .right {
     float: right;
 }
+.search-area {
+    font-size: 0;
+}
+.search-input {
+    width: 70%;
+}
+
+.search-submit {
+    width: 30%;
+}
