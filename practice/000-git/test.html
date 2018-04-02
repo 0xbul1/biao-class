@@ -1,22 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <style>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  .row {
+    font-size: 0;
+    display: block;
+    margin: 0 -30px;
+  }
+  .col {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 1rem;
+    /* =============== */
+    /* background: #111; */
+    min-height: 50px;
+    margin-bottom: 20px;
+    width: 33.333%;
+    padding: 0 30px;
+    border: 1px solid rgba(0, 0, 0, .1);
+  }
   p {
-    background: pink;
+    background: #aaa;
+
   }
-  @media print {
-    p {
-      background: blue;
-    }
+  .card {
+    background: #111;
+    min-height: 50px;
+    margin-bottom: 20px;
   }
-  </style>
-</head>
-<body>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci labore magni corporis veritatis, nobis, inventore saepe omnis minus alias, temporibus ratione dolores quis quibusdam delectus error enim! Beatae, modi libero.</p>
-</body>
-</html>
+
+</style>
+<h1>参照物</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, minus velit ipsa vel perspiciatis aperiam doloribus impedit consequuntur error eveniet aspernatur optio reprehenderit nihil libero laborum quam consequatur sequi assumenda.</p>
+<h1>有负margin</h1>
+<div class="row">
+  <div class="col">
+    <div class="card"></div>
+  </div>
+  <div class="col">
+      <div class="card"></div>    
+  </div>
+  <div class="col">
+      <div class="card"></div>    
+  </div>
+</div>
