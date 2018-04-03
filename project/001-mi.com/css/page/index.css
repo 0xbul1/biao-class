@@ -16,7 +16,7 @@
     background: #ff6700;
 }
 .main-promotion a:first-child {
-    padding-top: 40px;
+    /* padding-top: 40px; */
 }
 .main-promotion a:last-child {
     padding-bottom: 40px;
