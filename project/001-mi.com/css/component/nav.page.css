@@ -7,6 +7,7 @@
     background-size: cover;
     /* background-position: center 0;
     background-repeat: no-repeat; */ 
+    transition: background-image 3000ms;
 }
 .the-logo:hover {
     background-image:url(../../img/mi-home.png);
