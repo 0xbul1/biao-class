@@ -9,8 +9,11 @@ h1 {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    background: #FCFAF2;
-    padding-left: 10px;
+    /* background: #FCFAF2; */
+    background: rgba(252, 250, 242, .8);
+   
+    padding-left: 15px;
+    padding-right: 15px;
     box-shadow: 2px 3px 10px 5px #ddd;
 }
 .header {
