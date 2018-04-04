@@ -1,3 +1,6 @@
+img {
+    max-width: 100%;
+}
 .main-promotion {
     background-image: url(../../img/main-promotionbg.jpg); /*背景图*/
     background-position: center; /*背景图定位*/
@@ -48,9 +51,18 @@
 .incidental-promotion .col-lg-3 {
     padding: 0 10px;
 }
+.fast-buy-head  {
+    margin-top: 20px;
+}
+.fast-buy-head .title,
+.fast-buy-head .option {
+    font-size: 2rem;
+    
+}
 .fast-buy {
     margin: 0 -10px;
 }
+
 .fast-buy .col-5 {
     width: 20%;
     display: inline-block;
@@ -59,59 +71,107 @@
     padding: 0 10px;
 }
 .fast-buy .card {
-    background: #ccc;
-    height: 100px;
-    margin-top: 10px;
+    /* background: #ddd; */
+    /* height: 100px; */
+    margin-top: 20px;
+    border-top:2px solid #ff6700
+}
+.fast-buy .card .thumbnail {
+    padding: 20px 20px 0;
+}
+.fast-buy .card .text {
+    text-align: center;
+    padding: 10px;
+}
+.fast-buy .card .title {
+    color: #222;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.fast-buy .card .desc {
+    color: #ccc;
+    font-size: 70%;
+    margin-bottom: 5px;
+}
+.fast-buy .card .price {
+    color: #ff6700;
+    font-weight: bold;
 }
 .main-cat {
     margin: 0 -10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.main-cat-head {
+    margin-top: 20px;
+}
+.main-cat-head div {
+    font-size: 2rem;
 }
 .main-cat .col-2 {
     width: 20%;
     padding: 0 10px;
+    /* height: 200px; */
+}
+.main-cat .col-2 img {
+    height: 550px;
 }
 .main-cat .col-8 {
     width: 80%;
     padding: 0 10px;
+    display: inline-block;
+    vertical-align: top;
 }
-.main-cat .card {
+/* .main-cat .card {
     background: #ccc;
     height: 100px;
-    margin-top: 10px;
-}
-.fast-buy .card{
-    width:160px;
-    height:160px;
-    background:#fafafa;
-    border-top:2px solid red;
-}
-.fast-buy .card img{
-    display:block;
-    margin: 0 auto 22px;
-}
-.fast-buy{
-    margin-bottom: 200px;
-}
-.fast-buy span{
-    display:block;
+    margin-top: 20px;
+} */
+.main-cat .card {
+    padding: 0 20px 20px;
     text-align: center;
-    padding:0 10px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
 }
-.fast-buy .title{
-    font-size:16px;
-    line-height: 16px;
-    margin-bottom:5px;
+.main-cat .card .text .title {
+    font-size: 1.2rem;
+    color: #000;
+    margin-bottom: 5px;
 }
-.fast-buy .title_name{
-    margin-bottom:10px;
+.main-cat .card .text .desc {
+    font-size: .8rem;
+    color: #ccc;
+    margin-bottom: 5px;
 }
-.long_jpg img{
-    width:234px;
-    height:614px;
+.main-cat .card .text .price {
+    color: #ff6700;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
-.right_imgs>div{
-    display:inline-block;
+.extra-promotion-head {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.extra-promotion-head .left,
+.extra-promotion-head .right {
+    font-size: 1.8rem;
+}
+.extra-promotion {
+    margin: 0 -10px;
+}
+.extra-promotion .col-lg-3 {
+    padding: 0 10px;
+}
+.extra-promotion .text {
+    padding: 20px;
+    color: #000;
+}
+.extra-promotion .text .title {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+.extra-promotion .text .desc {
+    color: #ccc;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    
 }
