@@ -1,0 +1,61 @@
+body {
+    background: url(../img/event_background.png);
+    line-height: 1.5rem;
+    color: #777;
+}
+.max-container {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(252, 250, 242, .8);
+    padding: 20px;
+    padding-top: 40px;
+    box-shadow: 2px 3px 10px 5px #ddd;
+    margin-top: 40px;
+    transition: all 3000ms;
+}
+.max-container:hover {
+    max-width: 85%;
+    /* max-height: 110%; */
+    box-shadow: -12px 3px 24px 23px #EFE;
+}
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header .col-lg-4 .icon {
+    width: 100px;
+    padding-left: 25px;
+    /* margin-left: 30px; */
+    margin-top: 10px;
+}
+/* =========================== */
+.first-line .one-line,
+.second-line .one-line,
+.third-line .one-line,
+.footer .one-line {
+    border-bottom: 1px dotted rgba(0, 0, 0, .5);
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.first-line .one-line .left,
+.second-line .one-line .left,
+.third-line .one-line .left,
+.footer .one-line .left {
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+.first-line .two-line .left,
+.second-line .two-line .left,
+.third-line .two-line .left{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.first-line .three-line *,
+.second-line .three-line *,
+.third-line .three-line *{
+    font-size: 0.9rem;
+}
+/* =============================== */
