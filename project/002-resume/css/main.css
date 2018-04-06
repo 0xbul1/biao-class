@@ -1,24 +1,26 @@
 body {
-    background: url(../img/event_background.png);
+    /* background: url(../img/event_background.png); */
+    background: rgba(0, 0, 0, 0.2);
+     background: url(../img/bg-wood.jpg);
     line-height: 1.5rem;
     color: #777;
 }
 .max-container {
-    max-width: 850px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    background: rgba(252, 250, 242, .8);
+    background: rgba(252, 250, 242, .7);
     padding: 20px;
     padding-top: 40px;
-    box-shadow: 2px 3px 10px 5px #ddd;
+    box-shadow: 1px 1px 3px 3px #ddd;
     margin-top: 40px;
     margin-bottom: 40px;
-    transition: all 3000ms;
+    transition: all 2000ms;
 }
 .max-container:hover {
-    max-width: 85%;
+    max-width: 903px;
     /* max-height: 110%; */
-    box-shadow: -12px 3px 24px 23px #EFE;
+    box-shadow: -1px 3px 10px 10px rgba(246, 255, 254, 0.945);
 }
 .header {
     text-align: center;
