@@ -55,6 +55,10 @@ body {
     margin-right: 25px;
     font-size: 1.3rem;
     font-weight: 500;
+    transition: color 500ms;
+}
+.body .nav-page a:hover {
+    color: #f7a38e;
 }
 .body .announcement {
     margin: 25px 0 25px;
@@ -68,26 +72,178 @@ body {
     margin-bottom: 15px;
     background: #efefef;
     padding: 8px;
-    transition: background 1000ms;
+    transition: color 400ms,background 1000ms;
+    /* transition: background 3000ms; */
     border-radius: 5px;
 }
 .body .announcement .line-one:hover,
 .body .announcement .line-two:hover {
     background: #ffe0d8;
+    color: #fff;
 }
 .body .announcement .line-one span,
 .body .announcement .line-two span {
     font-size: 1.4rem;
     padding: 10px 12px;
 }
-.main .date {
+.body .main .date {
     color: #ccc;
     font-size: 0.9rem;
+    margin-top: 20px;
 }
-.main .title {
+.body .main .title {
     color: #2c96be;
     font-size: 1.5rem;
+    transition: color 500ms;
+    /* margin-left: 5px; */
+    /* padding-left: 20px; */
 }
-.main .img {
+.body .main .title:hover {
+    color: #ffe0d8;
+}
+.body .main .vertical-line {
+    position: relative;
+    right: 25px;
+    font-weight: 900;
+    /* height: 0px; */
+    font-size: 25px;
+    color: #2c96be;
+    display: inline-block;
+}
+.body .main .img {
+    transition: box-shadow 1000ms;
+    /* border-radius: 5px; */
+}
+.body .main .img img {
+    border-radius: 5px;
+}
+.body .main .img:hover {
+    /* border: 1px solid #ccc; */
+    box-shadow: 2px 2px 2px 2px #ddd ;
+}
+.body .main .picture-annotation {
+    /* border: 1px solid red; */
+    margin-top: 12px;
+    padding: 2px;
+    padding-left: 15px;
+    border-left:3px solid #ccc;
+    color: #ccc;
+}
+.body .main .whole-page {
+    font-size: 1.2rem;
+    color: #2c96be;
+    margin-top: 25px;
+    transition: color 500ms;
+}
+.body .main .whole-page:hover {
+    color: #ffe0d8;
+}
+.body .main .category {
+    padding-left: 23px;
+    background: url(../img/cats.svg);
+    background-repeat: no-repeat;
+    color: #aaa;
+    margin-top: 30px;
+}
+.body .main .tag {
+    padding-left: 23px;
+    background: url(../img/tags.svg);
+    background-repeat: no-repeat;
+    color: #aaa;
+    padding-bottom: 30px;
+    border-bottom: 1px dotted #ccc;
+}
+.body .main .category a,
+.body .main .tag a {
+    color: #2c96be;
+    display: inline-block;
+    padding-left: 10px;
+    transition: 500ms;
+}
+.body .main .category a:hover,
+.body .main .tag a:hover {
+    color: #f7a38e;
+}
+.body .search-area {
+    padding: 10px;
+    background: #f9f9f9;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.body .search-area .search-bar {
+    padding: 5px 8px;
+    width: 295px;
+    padding-right: 20px;
     border: 1px solid #ccc;
+    outline: none; 
+    transition: box-shadow 300ms;
+    /* border: none; */
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.04), inset 0 2px 8px 0 rgba(0, 0, 0, 0.075);
 }
+.body .search-area .search-bar:hover {
+    /* border: 1px solid #2c96be; */
+    /* border: 1px solid #2d95bd; */
+    border-color: #2c96be;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.04), inset 0 2px 8px 0 rgba(35, 149, 189, 0.4);
+
+}
+.body .search-area .search-sign {
+    position: absolute;
+    right: 285px;
+    top: 218px;
+}
+.body .recent-post {
+    background: #f9f9f9;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 20px;
+    padding: 15px;
+}
+.body .recent-post * {
+    display: block;
+}
+.body .recent-post span{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.body .recent-post a {
+   color: #2c96be;
+   margin-bottom: 5px;
+   transition: color 500ms;
+}
+.body .recent-post a:hover {
+    color: #f7a38e;
+}
+.body .find-me {
+    background: #f9f9f9;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 20px;
+    padding: 15px;
+}
+ .body .find-me span {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.body .find-me a {
+    color: #f7a38e;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+.body .friend {
+    background: #f9f9f9;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 20px;
+    padding: 15px;
+}
+.body .friend span {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.body .friend a {
+    color: #f7a38e;
+    margin-bottom: 5px;
+}  
