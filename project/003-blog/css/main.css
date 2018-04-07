@@ -165,12 +165,14 @@ body {
     color: #f7a38e;
 }
 .body .search-area {
+    position: relative;
     padding: 10px;
     background: #f9f9f9;
     margin-left: 10px;
     border-radius: 5px;
 }
 .body .search-area .search-bar {
+    /* position: relative; */
     padding: 5px 8px;
     width: 295px;
     padding-right: 20px;
@@ -189,8 +191,14 @@ body {
 }
 .body .search-area .search-sign {
     position: absolute;
-    right: 285px;
-    top: 218px;
+    /* position: absolute; */
+    right: 15px;
+    top: 16px;
+    /* right: 10px;
+
+    top: 10px; */
+    /* right: 285px;
+    top: 218px; */
 }
 .body .recent-post {
     background: #f9f9f9;
@@ -246,4 +254,8 @@ body {
 .body .friend a {
     color: #f7a38e;
     margin-bottom: 5px;
-}  
+} 
+.footer .col-lg-12 {
+    text-align: center;
+    margin-top: 50px;
+} 
