@@ -111,7 +111,8 @@ body {
     display: inline-block;
 }
 .body .main .img {
-    transition: box-shadow 1000ms;
+    /* transition: box-shadow 1000ms; */
+    transition:transform 2000ms,box-shadow 1000ms;
     /* border-radius: 5px; */
 }
 .body .main .img img {
@@ -120,6 +121,7 @@ body {
 .body .main .img:hover {
     /* border: 1px solid #ccc; */
     box-shadow: 2px 2px 2px 2px #ddd ;
+    transform: scale(1.01);
 }
 .body .main .picture-annotation {
     /* border: 1px solid red; */
@@ -158,7 +160,7 @@ body {
     color: #2c96be;
     display: inline-block;
     padding-left: 10px;
-    transition: 500ms;
+    transition: color 800ms;
 }
 .body .main .category a:hover,
 .body .main .tag a:hover {
