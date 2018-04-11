@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+<input type="text" id="name" placeholder="姓名">
+<script>
+    var name_element = document.querySelector('#name');
+    name_element.addEventListener('change',function(){
+        var name = name_element.value.trim();
+        switch (name) {
+            case 'whh' :
+            console.log('whh 你好啊');
+            break;
+            case 'lsd' :
+            console.log('lsd 还钱');
+            break;
+            case 'zks' :
+            console.log('zks buyue');
+            break;
+            default:
+            console.log('sbsbsbsbsbbsbs');
+            break;
+        }
+    });
+</script>
+
