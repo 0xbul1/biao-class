@@ -222,7 +222,23 @@
         [4, 44, 444] //4ban
       ]
   ];
-  for (var i=0; i < 连.length; i++){
-      
+  for_i: for (var i=0; i < 连.length; i++){
+      var a = 连[i];
+      console.log(a);
+      for_j: for (var j = 0; j < a.length; j++){
+        var b = a[j];
+        console.log(b);
+        for_k: for (var k = 0; k < b.length; k++){
+          var c = b[k];
+          console.log(c);
+          if (c == 3){
+            console.log('没必要检查下去了，我们中出了一个叛徒')
+            break;
+            // break for_j;
+            // break for_i;
+          }
+          // console.log(c);
+        }
+      }
   }
 </script> 
