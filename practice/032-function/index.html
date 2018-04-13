@@ -1,0 +1,69 @@
+<!-- <script>
+    // var a = 'lsd';
+    function sayHi(){
+        var a = 'whh';
+        console.log('hi'+a);
+    }
+    sayHi();
+    console.log('hi'+a);
+</script> -->
+<script>
+    ;(function(){
+        'use strict';
+
+        // var arr = [2, 4, 6, 8, 10, 11, 21];
+        // function array_sum(arr){
+        //     var sum = 0;
+        //     for (var i = 0; i < arr.length; i++){
+        //         var item = arr[i];
+        //         sum = sum +item;
+        //     }
+        //  console.log(sum);   
+        // }
+        // array_sum(arr);
+        // array_sum([1,2,3]);
+        // array_sum([1,1]);
+        // var arr = [2,4,6,8,10];
+        // function array_sum(arr){
+        //     var sum = 0;
+        //     for (var i = 0; i < arr.length;i++){
+        //         var num = arr[i];
+        //         sum = sum+num;
+        //     }
+        //     console.log(sum);
+        // }
+        // array_sum(arr);
+        // array_sum([0,1,2,3]);
+        var arr = [
+            {
+                name: '王花花',
+                playing: ['CS', '红警'],
+            },
+            {
+                name: '李拴蛋',
+                playing: ['守望屁股', '吃鸡', 'CS'],
+            },
+            {
+                name: '牛备备',
+                playing: ['红警', '吃鸡'],
+            }
+        ]
+        // search('CS'); // ["王花花", "李拴蛋"]
+        // search('吃鸡'); // ["李拴蛋", "牛备备"]
+        // search('红警'); // ["王花花", "牛备备"]
+        // search('守望屁股'); // ["李拴蛋"]
+        function search(keyword){
+            for (var i = 0; i < arr.length; i++){
+                var item = arr[i];
+                // console.log(item);
+                for (var j = 0; j < item.length; j++){
+                    var playing = item.playing;
+                }
+
+            }
+
+            search();
+        }
+        console.log(item);
+    })();
+</script>
