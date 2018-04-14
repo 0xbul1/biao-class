@@ -1,0 +1,256 @@
+<script>
+    // ;(function(){
+    //     function make_meal(attatch) {
+    //         console.log('========');
+
+    //         console.log('买菜');
+    //         if (attatch)
+    //             attatch();
+
+    //         console.log('洗菜');
+    //         console.log('炒菜');
+    //         }
+
+    //         function buy_pen() {
+    //         console.log('捎纸笔');
+    //         }
+
+    //         make_meal(buy_pen);
+    // })();
+    // ;(function(){
+    //     function make_meal(attach) {
+    //         console.log('====================');
+    //         console.log('买菜');
+    //         if (attach)
+    //             attach();
+
+    //         console.log('洗菜');
+    //         console.log('吃菜');
+    //     }
+    //     function buy_pen(){
+    //         console.log('稍支笔');
+    //     }
+    //     make_meal(buy_pen);
+    // })();
+    // ;(function(){
+        // function make_meal (attach){
+        //     console.log('====================');
+        //     console.log('买菜');
+        //     if (attach) {
+        //         attach();
+        //     }
+        //     console.log('洗菜');
+        //     console.log('吃菜');
+        // }
+        // function buy_pen() {
+        //     console.log('带纸笔');
+        // }
+        // make_meal(buy_pen);
+    //     function make_meal(attach){
+    //       console.log('买菜');
+    //       if (attach){
+    //           attach();
+    //       }
+    //       console.log('洗菜');
+    //       console.log('吃菜');
+    //     }
+    //     function buy_pen() {
+    //       console.log('带纸笔');
+    //     }
+    //     make_meal(buy_pen); 
+    // })();
+
+
+// ;(function () {
+//     'use strict';
+
+//     function make_meal(attach, eat_raw, pref) {
+//       console.log('========');
+
+//       console.log('买菜');
+//       if (attach)
+//         attach();
+
+//       console.log('洗菜');
+//       if (eat_raw)
+//         eat_raw();
+
+//       console.log('炒菜');
+//       if (pref)
+//         pref();
+//     }
+
+//     function buy_pen() {
+//       console.log('捎纸笔');
+//     }
+
+//     make_meal(
+//       buy_pen,
+//       function () {
+//         console.log('给我个西红柿');
+//       },
+//       function () {
+//         console.log('少放盐');
+//       }
+//     );
+//   })();
+//   ;(function(){
+
+//       function make_meal(attach, eat_raw, pref){
+//         console.log('========');
+
+//         console.log('买菜');
+//         if (attach)
+//         attach();
+
+//         console.log('洗菜');
+//         if (eat_raw)
+//         eat_raw();
+
+//         console.log('炒菜');
+//         if (pref)
+//         pref();
+//         }
+//         function buy_pen() {
+//         console.log('捎纸笔');
+//         }
+//         make_meal(
+//         buy_pen,
+//         function () {
+//             console.log('给我个西红柿');
+//         },
+//         function () {
+//             console.log('少放盐');
+//         }
+//         );
+//   })();
+// ;(function(){
+    // function sleep(before){
+    //     if (before){
+    //         before();
+    //     }
+    //     console.log('睡觉咯');
+
+    // }
+    // function brush_teeth() {
+    //     console.log('牙牙乐');
+    // }
+    // sleep(brush_teeth);
+    
+
+//     function sleep(before) {
+//         if (before){
+//             before();
+//         }
+//         console.log('睡觉');
+//     }
+//     function brush_teeth(){
+//         console.log('洗刷刷');
+//     }
+//     sleep(brush_teeth);
+// })();
+;(function(){
+    // function buy(money,success,fail){
+    //     if (money) {
+    //         console.log('下单搞定');
+    //         if (success){
+    //             success();
+    //         }
+    //         }else {
+    //             console.log('下单失败');
+    //             if (fail){
+    //                 fail();
+    //             }
+    //         }       
+    // }
+    // function on_game_order_success(){
+    //     console.log('游戏单，无需实体发货');
+    // } 
+    // function on_tshirt_order_success(){
+    //     console.log('服饰单');
+    //     console.log('通知仓库中...');
+    //     console.log('已通知仓库，发货中...');
+    // }
+    // function on_order_fail(){
+    //     console.log('钱呢');
+    // }
+    // buy(100, on_game_order_success, on_order_fail);
+    // buy(0, on_tshirt_order_success, on_order_fail);
+
+function buy (money,success,fail){
+    if(money){
+        console.log('下单成功');
+        if (success){
+            success();
+        }else{
+            if (fail){
+                fail();
+            }
+        }
+    }
+}
+function on_game_order_success(){
+    console.log('游戏单，无需实体发货');   
+}
+function on_tshirt_order_success(){
+    console.log('服饰单');
+    console.log('通知仓库中...');
+    console.log('已通知仓库，发货中...');
+}
+function on_order_fail(){
+    console.log('钱呢');  
+}
+buy (100,on_tshirt_order_success)
+
+function buy (money,success,fail){
+    if (money>0){
+        console.log('下单成功');
+        if(success){
+            success();   
+        }else{
+            console.log('下单失败')；
+            if (fail){
+                fail();
+            }
+        }
+    }
+}
+function on_game_order_success() {
+    console.log('游戏单，无需实体发货');       
+}
+function on_tshirt_order_success(){
+    console.log('服饰单');
+    console.log('通知仓库中...');
+    console.log('已通知仓库，发货中...');
+}
+function on_order_fail (){
+    console.log('钱呢');      
+}
+
+    // function buy(money,success,fail) {
+    //     if (money){
+    //         console.log('下单完成');
+    //         if (success){
+    //             success();
+    //         }else {
+    //             console.log('下单失败');
+    //             if (fail){
+    //                 fail();
+    //             }
+    //         }
+    //     }
+    // }
+    // function on_game_order_success(){
+    //     console.log('游戏单，无需实体发货');
+    // }
+    // function on_tshirt_order_success(){
+    //     console.log('服饰单');
+    //     console.log('通知仓库中...');
+    //     console.log('已通知仓库，发货中...');
+    // }
+    // function on_order_fail(){
+    //     console.log('钱呢');        
+    // }
+    // buy(100, on_tshirt_order_success,on_order_fail);
+})();
+</script>

@@ -1,0 +1,14 @@
+<script>
+    function buy(callback){
+        console.log('buy');
+        if (callback){
+            callback();
+        }
+    }
+    function bring(){
+        console.log('sb');
+    }
+    console.log(bring);
+    console.log(bring());
+    buy(bring);
+</script>

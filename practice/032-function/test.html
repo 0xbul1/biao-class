@@ -1,0 +1,156 @@
+<!-- <script>
+    ;(function (){
+        'use strict';
+        function array_sum(arr){
+            var sum = 0;
+            for (var i = 0; i < arr.length; i++){
+                var item = arr[i];
+                sum = sum + item;
+
+            }
+            console.log(sum);
+        }
+       var yo = [1,2,3,4,5];
+       array_sum(yo);
+    })();
+</script> -->
+<script>
+    // ;(function(){
+    //     'use strict';
+    //     function array_sum(arr){
+    //         var sum = 0;
+    //         for (var i = 0; i <arr.length; i++){
+    //             var item = arr[i];
+    //             sum = sum + item;
+    //         }
+    //         console.log(sum);
+    //     }
+    //     var yo = [1,2,3,4,5];
+    //     array_sum(yo);
+    // })();
+    // ;(function(){
+    //     // 遍历['y', 'o', 'o', 'o']并将它们连接起来。
+    //     'use strict';
+    //     function array_sum(arr){
+    //         var sum ='';
+    //         for (var i = 0; i < arr.length; i++){
+    //             var item = arr[i];
+    //             sum = sum + item;
+    //         }
+    //             console.log(sum);
+    //     }
+    //     var yo = ['y','o','o','o'];
+    //     array_sum(yo);
+    // })();
+
+
+    // ;(function(){
+    //     function array_even(arr){
+    //         var a = [];
+    //         for (var i = 0; i < arr.length; i++){
+    //             var item = arr[i];
+    //             if (item%2==0){
+    //                 a.push(item);
+    //             }
+    //         }console.log(a);
+    //     }
+    //     var yo = [1, 3, 2, 4, 7, 6];
+    //     array_even(yo);
+    // })();
+    // 通过遍历生成数组[1, 2, 3, 4, 5]
+    // ;(function(){
+    //     var a = [];
+    //     max = 5
+    //     function max_number(){
+    //         for (var i = 1; i <= max; i++){
+    //             var item = i;
+    //             a.push(i);
+    //         }
+    //         console.log(a);
+    //     }
+    //     max_number();
+    // })();
+
+    //==========================================================
+
+//     [
+//   {
+//     name: '王花花',
+//     salary: 100,
+//   },
+//   {
+//     name: '李拴蛋',
+//     salary: 200,
+//   },
+//   {
+//     name: '牛备备',
+//     salary: 300,
+//   },
+// ]
+// 找出工资大于100的人，将找到的人放到一个数组里。
+    // ;(function(){   
+    //     function search(keyword){
+    //         var list = [
+    //         {
+    //             name: '王花花',
+    //             playing: ['CS', '红警'],
+    //         },
+    //         {
+    //             name: '李拴蛋',
+    //             playing: ['守望屁股', '吃鸡', 'CS'],
+    //         },
+    //         {
+    //             name: '牛备备',
+    //             playing: ['红警', '吃鸡'],
+    //         },
+    //         ];
+    //         var result = [];
+    //         for (var i = 0; i < list.length; i++){
+    //             var item = list[i];
+    //             var playing = item.playing;
+    //             if (playing.indexOf(keyword) !== -1){
+    //                 result.push(item.name);
+    //             }
+    //         }
+    //         console.log(result);
+
+    //     }
+    //     search('吃鸡');
+    // })();
+
+    ;(function(){
+        list = [
+            {
+                name: '王花花',
+                playing: ['CS', '红警'],
+            },
+            {
+                name: '李拴蛋',
+                playing: ['守望屁股', '吃鸡', 'CS'],
+            },
+            {
+                name: '牛备备',
+                playing: ['红警', '吃鸡'],
+            },
+            {
+                name: '木哈哈',
+                playing: ['红警', 'CS', '吃鸡'],
+            },
+        ];
+        function search(keyword1,keyword2){
+            var result = [];
+             for ( var i = 0; i < list.length; i++){
+                var item = list[i];
+                var playing = item.playing;
+                if (playing.indexOf(keyword1) !== -1 && playing.indexOf(keyword2)!==-1){
+                    result.push(item.name);
+                }
+                // if(playing.indexOf(keyword2)){
+                //     result.push(item.name);                    
+                // }
+                }console.log(result);
+            }
+            search('吃鸡','CS');
+    })();
+
+</script>
