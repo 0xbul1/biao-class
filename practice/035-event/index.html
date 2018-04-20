@@ -1,0 +1,30 @@
+<button id="yo">yo</button>
+<!-- <script>
+
+    var el = document.querySelector('#yo');
+
+    var on_click = function(){
+        console.log(1);
+    }
+    el.addEventListener('click',on_click);
+
+    el.addEventListener('click',on_click);
+    // el.removeEventListener('click',on_click);
+</script> -->
+<script>
+    var el = document.querySelector('#yo');
+    function on_click(){
+        // console.log(1);     
+      return 1+2;
+    }
+    console.log(on_click);
+    console.log(on_click());
+    // el.addEventListener('click',on_click);
+    el.addEventListener('click',function(){
+        on_click();
+        console.log(2);
+    }); 
+    // el.removeEventListener('click',function(){
+    //     console.log(2);        
+    // });
+</script>

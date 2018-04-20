@@ -1,0 +1,96 @@
+<!-- ========================= -->
+<!-- <a href="#">链接1</a>
+<span>我是span</span>
+<button>Yo</button>
+<div class="a">我是.a</div>
+<div class="a">我是.a他弟弟</div>
+<div id="a">我是#a</div>
+
+<script>
+  ;(function () {
+    'use strict';
+
+    var btn = document.querySelector('button');
+    var link = document.querySelector('a');
+    var span = document.querySelector('span');
+    var div1 = document.querySelector('.a');
+    var div2 = document.querySelector('#a');
+
+    var div_list = document.querySelectorAll('.a');
+
+    var div1_1 = document.getElementsByClassName('a');
+    var div2_2 = document.getElementById('a');
+
+
+    for (var i = 0; i < div_list.length; i++) {
+      var ele = div_list[i];
+      console.log(ele);
+    }
+    // console.log(btn, link, span, div1, div2, div_list, div1_1, div2_2);
+
+    // btn.addEventListener('click', function () {
+    //   console.log(1);
+    // });
+
+
+  })();
+</script>
+ -->
+
+<!-- <button>yo</button> -->
+<a href="#" class="trigger">yo1</a>
+<!-- <a href="#" class="trigger">yo2</a> -->
+<!-- <a href="#" class="trigger">yo3</a> -->
+
+<!-- <a href="#">链接1</a>
+<span>我是span</span>
+<div class="a">我是.a</div>
+<div class="a">我是.a他弟弟</div>
+<div id="a">我是#a</div> -->
+<script>
+    // ;(function(){
+    //     'use strict';
+
+    //     // var btn = document.querySelector('button');
+    //     var trigger_list = document.querySelector('.trigger');
+        
+    //     // var link = document.querySelector('a');
+    //     // var span = document.querySelector('span');
+    //     // var span = document.querySelector('.a');
+    //     // var span = document.querySelector('#a');
+    //     // var div_list = document.querySelectorAll('a');
+        
+    //     for (var i = 0; i < trigger_list.length; i++){
+    //         var trigger = trigger_list[i];
+    //     }
+
+    //     trigger.addEventListener('click',function(event){
+    //         // console.log(event);
+    //         event.preventDefault();
+    //         console.log('yo');  
+            
+    //     });    
+    // })();
+    
+    ;(function(){
+        'use strict';
+        var trigger = document.querySelector('.trigger');
+        trigger.addEventListener('mouseenter',function(){
+            console.log('鼠标进入');
+        })
+        var trigger = document.querySelector('.trigger');
+        trigger.addEventListener('mouseleave',function(){
+            console.log('鼠标离开');
+        })
+    })();
+    //===========================
+    //===============
+    // var user = {
+    //     name: 'whh',
+
+    //     say_hi: function(){
+    //         console.log('yo');
+    //     }
+    // }
+    // user.say_hi();
+</script>

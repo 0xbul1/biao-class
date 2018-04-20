@@ -1,0 +1,34 @@
+<a class="trigger" href="http://baidu.com">yo1</a>
+<a class="trigger" href="http://baidu.com">yo2</a>
+<a class="trigger" href="http://baidu.com">yo3</a>
+
+<!-- <script>
+    ;(function(){
+        'use strict';
+        // 选中所有的a链接
+        var trigger_list = document.querySelectorAll('.trigger');
+        // 迭代元素组
+        for (var i = 0; i < trigger_list.length; i++){
+            var trigger = trigger_list[i];
+            // 给每个元素绑定事件
+            trigger.addEventListener('click',function(event){
+                event.preventDefault();
+                console.log('yo');
+            });
+        }
+
+    })();  
+</script> -->
+<script>
+    'use strict';
+
+    var trigger_list = document.querySelectorAll('.trigger')
+
+    for (var i = 0; i < trigger_list.length; i++){
+        var trigger = trigger_list[i];
+        trigger.addEventListener('click',function(event){
+            event.preventDefault();
+            console.log('yo');
+        });
+    }
+</script>
