@@ -1,0 +1,176 @@
+<!-- <label >
+    <input type="checkbox">item
+</label> -->
+<!-- <label for="yo">item</label>
+    <input type="text"  id="yo"> -->
+<!-- <label >
+    <input type="text">yo
+</label> -->
+<style>
+    body {
+        font-size: 20px;
+        font-family: sans-serif;
+    }
+    label {
+        display: block;
+        /* line-height: 2; */
+        padding: 10px;
+        user-select: none;
+    }
+    label:hover {
+        background: rgba(0, 0, 255, .1);
+    }
+</style>   
+
+<div>
+    <button id="all">全选</button>
+    <button id="none">全不选</button>
+    <button id="reverse">倒置</button>
+    
+</div>
+
+<label>
+    <input type="checkbox">item
+</label><label>
+    <input type="checkbox">item
+</label><label>
+    <input type="checkbox">item
+</label><label>
+    <input type="checkbox">item
+</label><label>
+    <input type="checkbox">item
+</label><label>
+    <input type="checkbox">item
+</label><label>
+    <input type="checkbox">item
+</label><label>
+    <input type="checkbox">item
+</label><label>
+    <input type="checkbox">item
+</label><label>
+    <input type="checkbox">item
+</label><label>
+    <input type="checkbox">item
+</label> 
+
+
+<!-- <script>
+    // =============================
+    // var a = ['a','b','c'];
+    // for(var i = 0; i < a.length; i++){
+    //     var item = a[i];
+    //     console.log(item);
+    // }
+    // for(var item of a){
+    //     console.log(item);
+    // } 
+    // a.forEach(function(item){
+    //     console.log(item);
+    // });
+
+    // =====================================
+
+
+////////===========全选====================
+    // var all = document.querySelector('#all')
+    // , list = document.querySelectorAll('input[type=checkbox]');
+    // all.addEventListener('click',function(){
+    //     list.forEach(function(item,index){
+    //         item.checked = true;
+    //     });
+    // });
+
+
+
+    // ===============全不选=======================
+    // var none = document.querySelector('#none')
+    // , list = document.querySelectorAll('input[type=checkbox]');
+    // none.addEventListener('click',function(){
+        // ===============两种循环测试===============
+    //     list.forEach(function(item,index){
+    //         item.checked = false;
+    //     });
+    // =======================================
+        // for(var item of list){
+        //     item.checked = false;
+        // }
+    // });
+    // ===============倒置=======================
+    // var reverse = document.querySelector('#reverse')
+    // ,list = document.querySelectorAll('input[type = checkbox]');
+    // reverse.addEventListener('click',function(){
+    //     list.forEach(function(item){
+    //         item.checked = !item.checked;
+    //     });
+    // });
+
+
+    // ==========点击自己被选择，其他人是不被选择的状态=================
+        // 选择所有checkbox
+  var list = document.querySelectorAll('input[type = checkbox]');
+    // 全不选
+    // @param element except 额外的元素
+    
+
+
+        function uncheck_all(except){
+            // =========用for写迭代===============
+        //    for (var item of list){
+        //        if (item === except)
+        //        continue;
+        //        item.checked = false;
+               
+        //    } 
+// ================用forEach写迭代=============
+            // 迭代所有元素
+            list.forEach(function(item){
+                // 如果正在迭代的元素是传进来的例外元素那么就不要
+                // 管，直接放弃本次迭代.
+                if (item === except)
+                return;
+                // 否则取消打勾
+
+                item.checked = false;
+            });
+        }
+  list.forEach(function (item ,index){
+    //   item.addEventListener('click',function(){
+    //   console.log(index);
+
+    //   每一个checkbox 绑定点击事件
+        item.addEventListener('click',function(e){
+            
+            // ==========按住ctrl选择====
+            
+            if(e.ctrlKey || e.metaKey)
+            return;
+    // 有任何一个元素被点击就清除所有元素的勾，
+    // 除了被点击的这个元素
+            uncheck_all(this);
+        });
+
+        // item.checked=true  ;
+
+      });
+//   });    
+</script> -->
+
+
+
+<!-- ============先点再按住shift， 中间的item全部会被选中======== -->
+<script>
+var list = document.querySelectorAll('input[type=checkbox]');
+    list.forEach(function(item){
+        item.addEventListener('click',function(){
+        // console.log(this);
+
+
+
+         });
+});
+</script>
+
+
+
+
+

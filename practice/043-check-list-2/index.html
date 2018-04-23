@@ -1,0 +1,95 @@
+<style>
+    * {
+        vertical-align: middle;
+    }
+    ..toolbar {
+        margin-bottom: 10px;
+
+    }
+    label {
+        display: block;
+        padding: 5px 10px;
+    }   
+    label:hover {
+        background: rgba(0, 0, 255, .1);
+    }
+</style>
+<div class="toolbar">
+    <button id="all">全选</button>
+    <button id="none">全不选</button>
+    <button id="reverse">倒置</button>
+</div>
+
+
+<label>
+    <input type="checkbox">item
+</label>
+<label>
+    <input type="checkbox">item
+</label>
+<label>
+    <input type="checkbox">item
+</label>
+<label>
+    <input type="checkbox">item
+</label>
+<label>
+    <input type="checkbox">item
+</label>
+<label>
+    <input type="checkbox">item
+</label>
+<label>
+    <input type="checkbox">item
+</label>
+<label>
+    <input type="checkbox">item
+</label>
+
+
+
+<script>
+    var all = document.querySelector('#all');
+    var list = document.querySelectorAll('input[type=checkbox]');
+    all.addEventListener('click',function(){
+       
+    //    ====forEach可以看作这样的======
+                // function a(){
+
+                // }
+                // a();
+                // a();
+                // a();
+                // a();
+                // a();
+                // a();
+                // a();                
+                // list.forEach(a);
+    // ============用forEach写============== 
+        // list.forEach(function(item){
+        //       item.checked = true;
+        // });
+
+        // ============用基本for循环写==============
+        // for (var i = 0; i < list.length; i++){
+        //    var item = list[i];
+        //     item.checked = true;
+        // }
+
+        // ==================for  of 循环
+        // for (var item of list){
+        //         item.checked = true;
+        // }
+
+
+
+
+
+
+
+
+
+
+        
+    });
+</script>
