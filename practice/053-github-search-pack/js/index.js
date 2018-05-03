@@ -1,7 +1,7 @@
-var event_manager = require('./event_manager');
+var event = require('./event');
 
 init();
 
 function init() {
-  event_manager.add_events();
+  event.add_events();
 }
