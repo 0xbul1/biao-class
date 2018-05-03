@@ -29,18 +29,19 @@
             form.addEventListener('submit',function (e){
                 e.preventDefault();
                 var username = input.value;
-                search(username);
+                find_user(username);
             });
     }
     function render_user(){
-        var html = 
-        ` id: ${user.login} <br>
-        头像:<img src="${user.avater_url}">
+        el_user.innerHTML = 
+        ` 
+        id: ${user.login} <br>
+        头像:<img src="${user.avatar_url}">
         `
-        el_user.innerHTML = html;
+        // el_user.innerHTML = html;
     }
 
-    function search(username){
+    function find_user(username){
         send('https://api.github.com/users/' + username,function (data){
             console.log(data);
             user = data;
