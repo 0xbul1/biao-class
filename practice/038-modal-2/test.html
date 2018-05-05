@@ -81,7 +81,37 @@
     </div>
   </div>
 </div>
+
+
 <script>
+  var mask = document.querySelector('.mask')
+  , login = document.querySelector('.login')
+  , close = document.querySelector('.close')
+  ;
+
+  login.addEventListener('click',function(){
+    // e.preventDefault();
+    show();
+  });
+  login.addEventListener('click', show);
+
+  function hide(){
+    mask.classList.remove('show');
+  }
+  function show(){
+    mask.classList.add('show');
+  }
+  mask.addEventListener('click',function(e){
+    if(e.target === close || e.target === mask){
+      hide();
+    }
+  });
+  
+</script>
+
+
+
+<!-- <script>
       var mask = document.querySelector('.mask')
         , modal = mask.querySelector('.modal')
         , close = document.querySelector('.close')
@@ -105,4 +135,4 @@
             return;
             hide();
         })
-</script>
+</script> -->

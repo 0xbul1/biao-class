@@ -13,7 +13,7 @@ function user(keyword, on_success) {
   
     http.addEventListener('load', function () {
       var data = JSON.parse(this.responseText);
-      on_success(data)
+      on_success(data);
     });
   }
   
