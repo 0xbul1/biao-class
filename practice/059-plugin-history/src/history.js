@@ -18,6 +18,7 @@ function init(config) {
   on_click = config.on_click;
 
   /*把冰箱里的数据取回到炒瓢*/
+  // console.log(el);
   sync_to_ladle();
 
   /*初次渲染*/
@@ -45,6 +46,7 @@ function render() {
 
 function sync_to_ladle() {
   list = JSON.parse(localStorage.getItem('history_list')) || [];
+  // console.log(history_list);
 }
 
 function sync_to_store() {

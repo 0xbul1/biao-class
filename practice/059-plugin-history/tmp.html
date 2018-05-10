@@ -1,0 +1,20 @@
+
+<!-- js历史遗留的屎一样的问题 -->
+
+<form id="a">
+    <input type="text">
+    <button id="btn" type="submit">yo</button>
+</form>
+<button id="btn2">yo1</button>
+<script>
+    a.addEventListener('submit',function(e){
+        e.preventDefault();
+        console.log(1);
+    });
+    // a.submit();
+    btn2.addEventListener('click',function(){
+        // a.submit();
+        // btn.click();
+    })
+
+</script>
