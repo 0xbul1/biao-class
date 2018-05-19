@@ -1,0 +1,44 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<form id="todo-list">
+    <!-- => {title: eat, completed: false, remind_at: 2018-...} -->
+    <input name="title" type="text" value="yo"><br>
+    <label>
+        <input name="completed" type="checkbox">完成
+    </label><br>
+    <button type="submit">添加任务</button>
+</form>
+
+<script>
+    ;(function(){
+        'use strict';
+        var row ={};
+
+        // var  title = document.querySelector('[name = title]');
+        // var  completed = document.querySelector('[name=completed]');
+        // console.log(title);
+        // row.title = title.value;
+        // row.completed = completed.value;
+
+        // console.log(row);
+        function get(form_Selector){
+            var data = {}
+            var form = document.querySelector(form_Selector)
+            var list = form.querySelectorAll('[name]')
+            console.log(form);            
+            console.log(list);
+            list.forEach(function (input){
+                
+                // if (input.nodeName === 'INPUT'){
+                //     if(input.type ==='checkbox' || input.type ==='radio')
+                //     data[input.name] = input.checked;
+                // }
+
+
+                console.log(input);
+            });
+            return data;
+        }
+        var row = get('#todo-list');
+        console.log(row);
+    })();
+</script>

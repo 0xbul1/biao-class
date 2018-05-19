@@ -1,0 +1,135 @@
+
+
+<!-- 问题2 -->
+<script>
+    ;(function(){
+        'use strict';
+
+
+        var row = {};
+        function get_form_data(form_selector){
+            var data = {};
+            var form = document.querySelector(form_selector);
+            var list = form.querySelectorAll('[name]');
+            list.forEach(function (input){
+                data[input.name] = input.value;
+            });
+            return data;
+        }
+
+        var row = get_form_data('#todo-form');
+        console.log(row);
+
+
+    })
+
+
+
+    function get_form_data(form_selector){
+        var data = {};
+        var form = document.querySelector(form_selector);
+        var list = form.querySelectorAll('[name]');
+
+
+        list.forEach(function (input){
+            // data[input.name] = input.value;
+            switch (input.nodeName){
+                case 'INPUT':
+                    switch (input.type){
+                        case 'text':
+                        case 'search':
+                        case 'number':
+                        case 'password':
+                            data[input.name] = input.value;
+                            break;
+                       case 'radio':
+                       case 'checkbox':
+                       data[input.name] = input.checked;
+                       break;     
+                    }
+
+                    break;
+                case 'TEXTAREA':
+                    data[input.name] = input.value;
+                    break;
+            }
+        });
+
+        return data;
+    }
+</script>
+
+<script>
+    ;(function (){
+        'use strict';
+        var row = {};
+
+
+        function get_form_data(form_selector){
+            var data = {};
+            var form = document.querySelector(form_selector);
+            var list = form.querySelectorAll('[name]');
+        }
+    })
+</script>
+<script>
+    function set_form_data(form_selector,data){
+        var form = document.querySelector(form_selector);
+
+
+        for (var key in data) {
+            var value = data[key];
+            var input = form.querySelector('[name=${key}]');
+
+            if(!input)
+            continue;
+
+            var data_type = typeof value;
+
+            switch (data_type){
+                case 'string':
+                case 'number':
+                    input.value = value;
+                    break;
+                case 'boolean': 
+                    input.checked = value;
+                    break;      
+            }
+        }
+    }
+
+
+    var row = {
+      title: '吃饭',
+      completed: true,
+      desc: 'mia mia mia...',
+    };
+    set_form_data('#todo-form', row);
+
+    function set_form_data(form_selector,data){
+        var form = document.querySelector(form_selector);
+
+
+
+        for (var key in data){
+
+            var value = data[key];
+            var input = form.querySelector(`[name = ${key}]`);
+
+            if(!input)
+            continue;
+
+            var data_type = typeof value;
+            
+
+        }
+    }
+
+</script>
+
+<script>
+    var row = {};
+    var title = document.querySelector('[name=title]');
+    var completed = document.querySelector('[name=completed]');
+    var color = document.querySelector('[name=color]');
+</script>
