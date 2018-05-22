@@ -1,5 +1,6 @@
 <meta charset="utf-8">
 <form id="todo-form" action="http://baidu.com">
+  <input name="id" type="hidden"  value="1">
   <input name="title" type="text" value="yo"><br>
   <input name="completed" type="checkbox"> 完成<br>
   <textarea name="desc">我是一段描述</textarea>
@@ -15,29 +16,47 @@
       var list = form.querySelectorAll('[name]');
 
       list.forEach(function (input) {
-        switch (input.nodeName) {
+        var type =  input.type;
+        var value = input.value;
+        var name = input.name;
 
+        if (name == 'id')
+          value = parseInt(value);   
+        switch (input.nodeName) {
           case 'INPUT':
-            switch (input.type) {
-              case 'text':
+            switch (type) {
+              case 'text': 
+              break;
               case 'search':
+              value = value.trim();
+              break;
               case 'number':
+              value = parseFloat(value);
+              break;
               case 'password':
+              case 'hidden':
+              // value = parseInt(value);
+              
                 /*如果是字符类数据，使用用户输入的值*/
-                data[input.name] = input.value;
+                // data[name] = value;
                 break;
               case 'radio':
               case 'checkbox':
                 /*如果是打钩类数据，使用打钩的状态（打|没打）*/
-                data[input.name] = input.checked;
+               
+               value = input.checked;
+                // data[name] = input.checked;
                 break;
             }
             // console.log(input);
             break;
           case 'TEXTAREA':
-            data[input.name] = input.value;
+            // data[name] = value;
             break;
         }
+
+        data[name] = value;
+
       });
 
       return data;

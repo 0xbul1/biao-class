@@ -1,0 +1,48 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<form id="todo-list">
+    <!-- => {title: eat, completed: false, remind_at: 2018-...} -->
+    <input name="title" type="text" ><br>
+    <label>
+        <input name="completed" type="checkbox">完成
+    </label><br>
+    <textarea name="desc"></textarea>
+    <button type="submit">添加任务</button>
+</form>
+<script>
+    ;(function (){
+        'use strict';
+        function set_form_data(form_selector, data){
+            // console.log(1);
+          var form = document.querySelector(form_selector);
+          for(var key in data ){
+              var value = data[key];
+            //   console.log(key,value);
+              var input = form.querySelector(`[name=${key}]`);
+              if(!input)
+            //  问题 forEach return;ojbk
+                continue;
+              var data_type = typeof value;
+
+              switch (data_type){
+                  case 'string':
+                  case 'number':
+                    input.value = value;
+                    break;
+                  case 'boolean':
+                    input.checked = value;
+                    break;
+              }
+            //   input.value = value;
+          }  
+          
+        }
+        var row = {
+            title:'吃饭',
+            completed:true,
+            desc:'mix mix mix...',
+            // yo:1
+        }
+
+        set_form_data('#todo-list',row);
+    })();
+</script>

@@ -9,7 +9,7 @@
     console.log(todo);
 </script> -->
 
-<script>
+<!-- <script>
     function User(name){
         this.name = name;
         this.yo = function(){
@@ -19,4 +19,167 @@
 
     var a =  new User('whh');
     var b = new User('lsd');
+</script> -->
+
+<!-- <script>
+    function Todo() {
+        this.max_id = 10;
+        this.todo_list = [];
+        this.add = function () { }
+        this.remove = function () { }
+        this.update = function () { }
+        this.read = function () { }
+    }
+
+    var todo = new Todo();
+    console.log(todo);
+
+</script> -->
+<!-- <script>
+    function TodoModel(name) {
+        this.max_id = 10;
+        this.todo_list = [];
+        this.add = function () { }
+        this.remove = function () { }
+        this.update = function () { }
+        this.read = function () { }
+
+
+        this.name = name;
+        this.yo = function(){
+            console.log(`yo,我是${this.name}`);
+        }
+    } 
+    TodoModel.prototype.yo = function (){
+        console.log(`yo,我是${this.name}`);
+    } 
+
+    var todo = new TodoModel('whh');
+    var todo2 = new TodoModel('lsd');
+
+
+</script> -->
+
+
+
+<script>
+    function TodoModel(list, max_id) {
+        this.max_id = max_id || 1;
+        this.list = list || [];
+
+
+        // this.add =function(){}
+        // this.remove =function(){}
+        // this.upadte =function(){}
+        // this.read =function(){}
+
+    }
+
+
+
+    TodoModel.prototype.add = add;
+    TodoModel.prototype.remove = remove;
+    TodoModel.prototype.update = update;
+    TodoModel.prototype.read = read;
+    
+    // var max_id = 101;
+    var todo_list = [
+        {
+            id: 100,
+            name: '买菜',
+            completed: false,
+        },
+        {
+            id: 101,
+            name: '洗菜',
+            completed: false,
+        },
+    ];
+    // console.log(todo_list);
+   
+
+    // 增
+    function add(row) {
+        this.max_id = this.max_id +1
+        row_id = this.max_id ;
+        todo_list.push(row);
+
+    }
+    // add (
+    //     {
+    //         id: 101,
+    //         name: '洗菜',
+    //         completed: false,  
+    //     }
+    // );
+    // console.log(todo_list);
+    // 删
+    function remove(id) {
+        var index = find_index_by_id(this.list, id);
+        console.log(this.list);
+        if (index < 0)
+            return;
+        this.list.splice(index, 1);
+    }
+
+
+
+    // 改
+    function update(id, new_row) {
+        var index = find_index_by_id(this.list, id);
+
+        if (index < 0)
+        return;
+        
+        var old_row = this.list[index];
+        this.list[index] = Object.assign({}, old_row,new_row);
+    }
+    
+    // update(100, {
+        //     completed: true,
+        //     remind_at: '2030',
+        // })
+        // console.log('todo_list:', todo_list);
+        
+        // 查
+        function read(id) {
+            if (id)
+            return find_by_id(this.list, id);
+            
+            return this.list;
+        }
+        function find_by_id(arr, id) {
+            return arr.find(function (row) {
+                return row.id === id;
+            });
+        }
+        function find_index_by_id(arr, id) {
+            return arr.findIndex(function (row) {
+                return row.id == id;
+            });
+        }
+        // remove (1000);
+        // console.log('todo_list',todo_list);
+
+
+
+        // console.log(read(100));
+        var todo = new TodoModel(todo_list,101);
+        // console.log(todo);
+        // var todo2 = new TodoModel();
+        
+        // todo.add({
+            //     name: '测试',
+            //     completed: true,
+            // });
+            
+            // todo.remove(101);
+            todo.update(100, {
+                // id: 1,
+                completed: true,
+                yo: 1
+            });
+            console.log(todo.read());
+            
+            
 </script>
