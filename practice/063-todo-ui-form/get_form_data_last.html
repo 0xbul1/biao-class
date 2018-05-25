@@ -1,0 +1,48 @@
+<meta charset="utf-8">
+<form id="todo-form">
+    <input type="hidden" name="id" value="1">
+    <input type="text" name = "title" value="yo"><br>  
+    <input type="checkbox" name="completed">完成<br>
+    <textarea name="desc">这是一段不可言语的描述</textarea>  
+    <button type="submit">添加任务</button>    
+</form>
+
+<script>
+   ;(function(){
+       'use strict';
+
+
+       function get_form_data(form_selector) {
+           var data = {}
+           var form = document.querySelector(form_selector);
+           var list = form.querySelectorAll('[name]');
+       
+           list.forEach(function (input) {
+               switch (input.nodeName) {
+                    case 'INPUT':
+                        switch (input.type){
+                            case 'text':
+                            case 'search':
+                            case 'number':
+                            case 'password':
+                            case 'hidden':
+                                data[input.name] = input.value;
+                                break;
+                                case 'radio':
+                                case 'checkbox':
+                                data[input.name] = input.checked;
+                                break;
+                            }
+                    case 'TEXTAREA':
+                        data[input.name] = input.value;
+                        break;                        
+               }
+           });
+           return data;
+       }
+
+       var todo_row = get_form_data('#todo-form');
+       console.log(todo_row);
+
+   })(); 
+</script>
